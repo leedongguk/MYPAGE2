@@ -1,0 +1,229 @@
+[
+  {
+    "id": 1,
+    "title": "AI·공공데이터 상권분석 플랫폼",
+    "subtitle": "RCG",
+    "period": "2025.04 - 2025.05",
+    "members": "프론트 2명, 백엔드 2명",
+    "description": "[국토교통부] 교통·상권·도시 데이터를 활용한 상권 분석 플랫폼에 프론트/백으로 참여하였습니다.",
+    "tags": [
+      "#팀",
+      "#웹",
+      "#2025년 국토교통 데이터 활용경진대회"
+    ],
+    "features": [
+      "사업자 전용 익명게시판",
+      "지도",
+      "AI분석",
+      "상권 상세 데이터 조회",
+      "문서화 및 다운로드",
+      "실시간 기반 시각화 탭"
+    ],
+    "techs": ["React", "Spring"],
+    "image": "https://private-user-images.githubusercontent.com/121941036/445300852-2909b663-9691-416d-b004-054771af9f83.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg0OTk3ODgsIm5iZiI6MTc0ODQ5OTQ4OCwicGF0aCI6Ii8xMjE5NDEwMzYvNDQ1MzAwODUyLTI5MDliNjYzLTk2OTEtNDE2ZC1iMDA0LTA1NDc3MWFmOWY4My5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyOVQwNjE4MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMzEzNjcxNzhkYzVjYmU2MTE3MWU5ZmVkOWZmY2EwYjU1NTA4NzdkNzBiZmM4ZjhjM2I2N2IzNmZjOTU2NzcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.NoMk2egWmIa8allftoG5fY6RADMYQPJtKlZRU4rcaJA",
+    "videoUrl": "https://www.youtube.com/watch?v=EjwiYa5g3FM",
+    "githubUrl": "https://github.com/RTG-Ryu-Chae-Guk"
+  },
+  {
+    "id": 2,
+    "title": "소상공인을 위한 테이블오더",
+    "subtitle": "ORDER FLOW",
+    "description": "[한이음] 소상공인을 위한 좌석 QR연동 테이블오더에 풀스택 개발자로 참여하였습니다.",
+    "tags": [
+      "#팀",
+      "#한이음",
+      "#반응형",
+      "#IOS",
+      "Android",
+      "Web"
+    ],
+    "features": [
+      "가맹점 등록/관리",
+      "QR 및 일반 로그인",
+      "관리자 로그인",
+      "주문",
+      "장바구니",
+      "직원호출",
+      "주문내역",
+      "결제",
+      "고객의소리",
+      "노래신청",
+      "관리자화면",
+      "사업자진위여부확인"
+    ],
+    "techs": ["React","ReactNative", "Spring"],
+    "period": "2024.04 - 2024.10",
+    "members": "프론트 2명, 백엔드 2명",
+    "image": "https://github.com/24HF063orderflow/Image/raw/main/Main/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88.png",
+    "videoUrl": "https://youtu.be/33Fr0mrp0qk",
+    "githubUrl": "https://github.com/yourname/project2"
+  },
+  {
+    "id": 3,
+    "title": "[APP]전기차 충전소 종합 플랫폼",
+    "subtitle": "포트폴리오 사이트",
+    "description": "[한이음] 전기차 충전소 종합 플랫폼 IOS/Android version에 풀스택 개발자로 참여하였습니다.",
+    "tags": [
+      "#팀",
+      "#한이음",
+      "#Android",
+      "IOS",
+      "Web"
+    ],
+    "features": [
+      "공용충전기 상태 조회",
+      "공용충전기 예약 관리",
+      "전기차 관련 News",
+      "개인충전기 관리",
+      "AI Chat Bot",
+      "세차추천",
+      "사업자진위여부"
+    ],
+    "techs": ["Flutter", "JS", "Html", "Css", "Spring"],
+    "period": "2024.04 - 2024.10",
+    "members": "프론트 2명, 백엔드 2명",
+    "image": "https://github.com/ICT-EcoFlow/image/raw/main/%EC%8B%9C%EC%9E%91.png",
+    "videoUrl": "https://youtu.be/3tR8rDyRXNM",
+    "githubUrl": "https://github.com/ICT-EcoFlow/.github/tree/main/profile"
+  },
+  {
+    "id": 4,
+    "title": "[WEB]전기차 충전소 종합 플랫폼",
+    "subtitle": "",
+    "description": "서경대·기업연계 프로젝트를 풀스택 개발자로 참여하였습니다.",
+    "tags": [
+      "#팀",
+      "#동상",
+      "#반응형"
+    ],
+    "features": [
+      "공용충전기 상태 조회",
+      "공용충전기 예약 관리",
+      "전기차 관련 News",
+      "개인충전기 관리",
+      "AI Chat Bot",
+      "충전소 검색 및 로드뷰",
+      "문자 안내 시스템",
+      "소셜 로그인"
+    ],
+    "techs": ["JS", "Html", "Css", "Spring"],
+    "period": "2024.02 - 2024.5",
+    "members": "프론트 1명, 백엔드 1명",
+    "image": "https://github.com/leedongguk/SW-Acadamy-Project/raw/main/image/%EC%B6%A9%EC%A0%84%EC%86%8C.png",
+    "videoUrl": "https://youtu.be/ncX_sXPGzZs",
+    "githubUrl": "https://youtu.be/ncX_sXPGzZs"
+  },
+  {
+    "id": 5,
+    "title": "주류판매 사이트",
+    "subtitle": "",
+    "description": "JSP를 활용한 주류판매 플랫폼",
+    "tags": [
+      "#개인",
+      "#포트폴리오"
+    ],
+    "features": [
+      "로그인",
+      "회원가입",
+      "장바구니",
+      "커뮤니티",
+      "구매 및 배송"
+    ],
+    "techs": ["JS", "Html", "Css", "JSP"],
+    "period": "2022.02 - 2022.5",
+    "members": "풀스택 1명",
+    "image": "https://github.com/leedongguk/JSP-Project-Alchol-Shopping-Mall/blob/master/308393688-93da9208-2662-4a32-b7f2-c14d3ad6eb60.png?raw=true",
+    "videoUrl": "#detail2",
+    "githubUrl": "https://github.com/leedongguk/JSP-Project-Alchol-Shopping-Mall"
+  },
+  {
+    "id": 6,
+    "title": "자기소개 홈페이지",
+    "subtitle": "",
+    "description": "React를 활용한 자기소개 홈페이지",
+    "tags": [
+      "#개인",
+      "#포트폴리오",
+      "#반응형"
+    ],
+    "features": [
+      "홈",
+      "프로필",
+      "프로젝트"
+    ],
+    "techs": ["React"],
+    "period": "2025.02 - 2025.2",
+    "members": "풀스택 1명",
+    "image": "https://github.com/leedongguk/MYPAGE/raw/main/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94__-%EB%B3%B5%EC%82%AC%EB%B3%B8.gif",
+    "videoUrl": "#detail2",
+    "githubUrl": "https://github.com/leedongguk/MYPAGE"
+  },
+  {
+    "id": 7,
+    "title": "포트폴리오 사이트",
+    "subtitle": "포트폴리오 사이트",
+    "description": "포트폴리오 사이트",
+    "tags": [
+      "#개인",
+      "#포트폴리오",
+      "#반응형"
+    ],
+    "features": [
+      "홈",
+      "프로필",
+      "프로젝트",
+      "이메일 보내기"
+    ],
+    "techs": ["React"],
+    "period": "2025.05 - 2025.5",
+    "members": "풀스택 1명",
+    "image": "https://github.com/leedongguk/MYPAGE2/blob/main/image/%EB%85%B9%EC%9D%8C%202025-05-28%20231405.gif?raw=true",
+    "videoUrl": "#detail2",
+    "githubUrl": "https://github.com/leedongguk/MYPAGE2"
+  },
+  {
+    "id": 8,
+    "title": "이미지 편집 툴",
+    "subtitle": "",
+    "description": "OPENCV2를 활용한 이미지 편집 툴",
+    "tags": [
+      "#개인",
+      "#OPENCV"
+    ],
+    "features": [
+      "카메라 필터기능",
+      "드로잉",
+      "모자이크",
+      "얼굴인식",
+      "몰카인식",
+      "섹션나누기",
+      "워터마크"
+    ],
+    "techs": ["OPENCV2","Python"],
+    "period": "2023.05 - 2023.5",
+    "members": "풀스택 1명",
+    "image": "https://github.com/leedongguk/Photoshop-opencv2-python-/blob/main/308396754-4a25b5d5-1b92-43b0-b9c3-5758aae223da.gif?raw=true",
+    "videoUrl": "#detail2",
+    "githubUrl": "https://github.com/leedongguk/Photoshop-opencv2-python-"
+  },
+  {
+    "id": 9,
+    "title": "편의점 POS",
+    "subtitle": "편의점 POS 만들기",
+    "description": "JSP와 SPRING을 활용한 편의점 포스기",
+    "tags": [
+      "#팀"
+    ],
+    "features": [
+      "로그인",
+      "회원가입",
+      "편의점POS기능"
+    ],
+    "techs": ["OPENCV2","Python"],
+    "period": "2023.05 - 2023.5",
+    "members": "풀스택 1명, 프론트 1명",
+    "image": "https://github.com/leedongguk/SpringProject/blob/main/259111825-002e54ef-2f3f-4f02-96d1-d26b2e6d2ad9.png?raw=true",
+    "videoUrl": "#detail2",
+    "githubUrl": "https://github.com/leedongguk/SpringProject"
+  }
+]

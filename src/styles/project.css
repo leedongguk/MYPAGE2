@@ -1,0 +1,376 @@
+.projects {
+  background-color: #121212;
+  color: white;
+  padding: 0px 100px 80px; /* 위쪽 여백 조정 */
+  height:100vh;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  position: relative;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 이미지 흑백 → 컬러 전환 */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+
+.project-card:hover img {
+  filter: grayscale(0%);
+}
+
+/* 이미지 오버레이 텍스트 */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* 본문 내용 */
+.project-card h3 {
+  font-size: 1.2rem;
+  margin: 16px 16px 8px 16px;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin: 0 16px 16px 16px;
+  color: #ccc;
+}
+
+/* 버튼 컨테이너 */
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 16px 16px;
+  gap: 8px;
+}
+
+.project-buttons a {
+  flex: 1;
+  text-align: center;
+  background-color: #ffffff10;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #444;
+  transition: background-color 0.3s ease;
+}
+
+.project-buttons a:hover {
+  background-color: #ffffff20;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 16px;
+}
+
+.project-tags span {
+  background-color: #2e2e2e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #ccc;
+  transition: background 0.3s;
+}
+
+.project-tags span:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+  color: #fff;
+  padding: 32px 24px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  animation: slideUp 0.4s ease;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 6px;
+}
+
+.modal-header p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.modal-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #ddd;
+}
+
+.modal-content h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  border-left: 4px solid #666;
+  padding-left: 10px;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+  list-style: disc;
+  color: #ccc;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #444;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: white;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-close:hover {
+  background-color: #666;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* 스크롤바 커스텀 (크롬 기준) */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 0px 16px 60px;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-y: hidden;     /* ✅ 세로 스크롤 차단 */
+    overscroll-behavior-y: contain; /* ✅ 불필요한 바운스 방지 */
+  }
+
+  .project-list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;     /* ✅ 수직 스크롤 완전 차단 */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    touch-action: pan-x;    /* ✅ 가로 스크롤만 허용 */
+  }
+
+  .project-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    min-width: 250px;
+  }
+
+    .projects h2 {
+      font-size: 1.8rem;
+      margin-bottom: 36px;
+    }
+
+
+  .project-card img {
+    height: 250px;
+  }
+
+  .project-overlay {
+    height: 250px;
+    font-size: 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+    margin: 12px 12px 6px 12px;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+    margin: 0 12px 12px 12px;
+  }
+
+  .project-tags {
+    gap: 4px;
+    margin: 6px 12px;
+  }
+
+  .project-tags span {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .project-buttons {
+    padding: 0 12px 12px 12px;
+    flex-direction: column;
+  }
+
+  .project-buttons a {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+.modal-content {
+    width: 90%;
+    max-height: 85vh;
+    padding: 20px 16px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+
+  .modal-header p {
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
+
+  .modal-description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .modal-content h3 {
+    font-size: 1.05rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .modal-content ul {
+    padding-left: 16px;
+    font-size: 0.9rem;
+  }
+
+  .modal-close {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal-content::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+}

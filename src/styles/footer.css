@@ -1,0 +1,238 @@
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 40px 20px;
+  z-index: 0;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title-wrapper {
+  position: relative;
+  height: 20vw;
+  margin-bottom: 1vw;
+}
+
+.footer-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+    font-size: 8vw;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    width: 0;
+    overflow: hidden;
+}
+.footer-sub-overlap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top:15vw;
+    color: black;
+    opacity: 0;
+    animation: fadeInFooter 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+.footer-title.typing {
+  animation: typingFooter 2s steps(10, end) forwards, blink 0.75s step-end infinite;
+}
+
+.footer-title.typing {
+  animation: typingFooter 2s steps(10, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typingFooter {
+  from { width: 0; }
+  to { width: 10ch; }
+}
+
+.footer-desc {
+  font-size: 1.1vw;
+  color: #ccc;
+  line-height: 1.6;
+  opacity: 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color:#232323;
+}
+.footer-sub-overlap.typing-sub {
+  width: 0;
+  overflow: hidden;
+  border-right: 2px solid black;
+  animation: typingSub 1.8s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typingSub {
+  from { width: 0; }
+  to { width: 22ch; } /* 글자 수 맞게 조절 */
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+.footer-links a {
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: gray;
+  transform: translateY(-2px);
+}
+
+.footer-links a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+.footer-copy {
+  font-size: 12px;
+  color: #888;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fade-in {
+  animation: fadeInFooter 1s ease-in forwards;
+}
+
+@keyframes fadeInFooter {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: calc(var(--vh, 1vh) * 100);
+    padding: 80px 16px 60px;
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+  .footer-inner {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-title-wrapper {
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+.footer-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 16vw;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    width: 0;
+    overflow: hidden;
+}
+.footer-sub-overlap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 7vw;
+    font-weight: 500;
+    margin-top:28vw;
+    color: black;
+    opacity: 0;
+    animation: fadeInFooter 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+  .footer-desc {
+    font-size: 3vw;
+    margin-top: 180px;
+    margin-bottom: 60px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    opacity: 1; /* 모바일에서도 항상 보이게 하고 싶다면 */
+  }
+
+  .footer-links a {
+    font-size: 3vw;
+  }
+
+  .footer-copy {
+    font-size: 10px;
+    bottom: 10px;
+  }
+
+  .footer-title.typing {
+    animation: typingFooter 1.5s steps(8, end) forwards, blink 0.75s step-end infinite;
+  }
+
+  .footer-sub-overlap.typing-sub {
+    animation: typingSub 1.5s steps(18, end) forwards, blink 0.75s step-end infinite;
+  }
+
+  @keyframes typingFooter {
+    from { width: 0; }
+    to { width: 9ch; }
+  }
+
+  @keyframes typingSub {
+    from { width: 0; }
+    to { width: 20ch; }
+  }
+}
+
+

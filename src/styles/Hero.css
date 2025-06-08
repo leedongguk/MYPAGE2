@@ -1,0 +1,261 @@
+/*hero.css*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-inner {
+  transition: none;
+  will-change: transform, opacity, filter;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 1200px;
+  transform: translate(-50%, -50%);
+  font-size: 8vw;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  z-index: 2;
+  margin-top: 30vh;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-out;
+}
+
+.subtitle {
+  font-size: 3vw;
+  margin-top: -3vw;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingSubtitle 2s steps(24, end), blink 0.75s step-end infinite;
+}
+
+.desc {
+  font-size: 1.0vw;
+  margin-top: -2vw;
+}
+
+.profile-img {
+  width: 500px;
+  margin-top: 0px;
+  border-radius: 10px;
+  z-index: 2;
+  filter: grayscale(100%);
+  transition: filter 0.8s ease;
+}
+
+.profile-img:hover {
+  filter: grayscale(0%);
+  transition: filter 0.4s ease;
+}
+
+.scroll-down {
+  font-size: 30px;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+  z-index: 2;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+}
+
+/* 타이핑 효과 */
+.typing-title {
+  display: inline-block;
+  overflow: hidden;
+  position:absolute;
+  white-space: nowrap;
+  animation: typingTitle 1.8s steps(10, end), blink 0.75s step-end infinite;
+}
+
+.typing-subtitle {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingSubtitle 2s steps(24, end), blink 0.75s step-end infinite;
+  margin-top: 1rem;
+}
+
+/* FULL-STACK 타이핑 (10글자) */
+@keyframes typingTitle {
+  from { width: 0; }
+  to { width: 10ch; }
+}
+
+/* 백·프론트 개발자 이동국입니다. (24글자 정도) */
+@keyframes typingSubtitle {
+  from { width: 0; }
+  to { width: 24ch; }
+}
+
+/* 페이드 인 효과 */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.highlight {
+  font-weight: bold;
+  color: black;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
+.top-links {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.top-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-weight: 500;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.top-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.top-links a:hover {
+  color: gray; /* 텍스트 색상 파란색으로 변경 */
+  transform: translateY(-2px);
+}
+
+.top-links a:hover::after {
+  transform: scaleX(1); /* 밑줄 애니메이션 등장 */
+}
+
+.update-date {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: calc(var(--vh, 1vh) * 100);
+    background-attachment: scroll;
+  }
+  .hero-content {
+      margin-top: 8vh;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .title {
+    font-size: 14vw;
+    width: auto;
+    top: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 6vw;
+    margin-top: 0rem;
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 4vw;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+
+  .profile-img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 1rem;
+  }
+
+  .top-links {
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+  }
+
+  .top-links a {
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    font-weight:900;
+  }
+
+  .scroll-down {
+    font-size: 24px;
+    margin-top: 1.5rem;
+  }
+
+  .update-date {
+    font-size: 10px;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+  }
+}
